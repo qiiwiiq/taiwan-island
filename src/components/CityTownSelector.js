@@ -34,12 +34,18 @@ const CityTownSelector = ({
   };
 
   return (
-    <div>
-      <select onChange={selectCityHandler}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-white p-4">
+      <select
+        className="form-select md:w-2/3 md:justify-self-end bg-gray-200 rounded border-none outline-none focus:ring-0"
+        onChange={selectCityHandler}
+      >
         <option value="">請選擇縣市</option>
         {cities}
       </select>
-      <select onChange={selectTownHandler}>
+      <select
+        className="form-select md:w-2/3 md:justify-self-start bg-gray-200 rounded border-none outline-none focus:ring-0"
+        onChange={selectTownHandler}
+      >
         <option value="">請選擇鄉鎮區</option>
         {towns}
       </select>

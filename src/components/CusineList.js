@@ -13,7 +13,7 @@ const CusineList = ({ selectedCity, selectedTown, cusineData }) => {
   }
 
   return (
-    <div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-5">
       {filterCusines.map((cusine) => (
         <Cusine key={cusine.ID} cusine={cusine} />
       ))}

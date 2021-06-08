@@ -1,0 +1,16 @@
+.cusine {
+  height: 50vw;
+}
+
+@media (min-width: 640px) {
+  .cusine {
+    height: 27vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .cusine {
+    height: 17vw;
+    max-height: 150px;
+  }
+}
